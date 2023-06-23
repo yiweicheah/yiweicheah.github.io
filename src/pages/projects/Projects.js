@@ -50,9 +50,94 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
+          <div
+            className="repo-card-div"
+            style={{ backgroundColor: theme.highlight }}
+          >
+            <Fade bottom duration={2000} distance="40px">
+              <div
+                key="1"
+                onClick={() =>
+                  window.open("https://www.timmycards.com", "_blank")
+                }
+              >
+                <div className="repo-name-div">
+                  <svg
+                    aria-hidden="true"
+                    className="octicon repo-svg"
+                    height="16"
+                    role="img"
+                    viewBox="0 0 12 16"
+                    width="12"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                    ></path>
+                  </svg>
+                  <p className="repo-name" style={{ color: theme.text }}>
+                    Timmy Cards
+                  </p>
+                </div>
+                <p className="repo-description" style={{ color: theme.text }}>
+                  A website for avid TCG lovers to trade and sell.
+                </p>
+                <div className="repo-details">
+                  <p
+                    className="repo-creation-date subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    Created on 2023-03-07
+                  </p>
+                  {/* <ProjectLanguages className="repo-languages" logos="React" /> */}
+                </div>
+              </div>
+            </Fade>
+          </div>{" "}
+          <div
+            className="repo-card-div"
+            style={{ backgroundColor: theme.highlight }}
+          >
+            <Fade bottom duration={2000} distance="40px">
+              <div
+                key="1"
+                onClick={() =>
+                  window.open("https://www.dmemusic.com.my", "_blank")
+                }
+              >
+                <div className="repo-name-div">
+                  <svg
+                    aria-hidden="true"
+                    className="octicon repo-svg"
+                    height="16"
+                    role="img"
+                    viewBox="0 0 12 16"
+                    width="12"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                    ></path>
+                  </svg>
+                  <p className="repo-name" style={{ color: theme.text }}>
+                    DME Music Studio
+                  </p>
+                </div>
+                <p className="repo-description" style={{ color: theme.text }}>
+                  An info site for DME Music SDN. BHD.
+                </p>
+                <div className="repo-details">
+                  <p
+                    className="repo-creation-date subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    Created on 2023-06-12
+                  </p>
+                  {/* <ProjectLanguages className="repo-languages" logos="React" /> */}
+                </div>
+              </div>
+            </Fade>
+          </div>
         </div>
         <Button
           text={"More Projects"}
